@@ -76,7 +76,7 @@ function add()
 
 function remove()
 {
-    var id = this.getAttribute(id);
+    var id = this.getAttribute("id");
     var array = getArray();
     array.splice(id,1);
     //Take ID for the selected button
@@ -106,7 +106,7 @@ function show()
     
     for(var j=0; j<buttons.length; j++)
         {
-            buttons[z].addEventListener("click", remove);
+            buttons[j].addEventListener("click", remove);
         }
 }
 
