@@ -74,6 +74,21 @@ function add()
     return false;
 }
 
+function remove()
+{
+    var id = this.getAttribute(id);
+    var array = getArray();
+    array.splice(id,1);
+    //Take ID for the selected button
+    //Create the lastest array
+    //Splice the remove Task from the Array
+    
+    localStorage.setItem("ToDoTasks", JSON.stringify(array));//Updating the array in local storage
+    show();//Showing the lastest list
+    
+    return false;
+}
+
 function show()
 {
     var array = getArray();
